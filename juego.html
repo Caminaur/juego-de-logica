@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>El juego de los Numeros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="main_game" class="container main">
+      <h1 class="d-flex justify-content-center">The Game</h1>
+      <div id="game_view" class="mt-3 game d-flex justify-content-center">
+        <h2 class="pt-3">Test your logic skills</h2>
+        <br>
+        <div class="">
+          <svg class="line1" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+          <svg class="line2" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line3" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line4" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+          <svg class="line5" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line6" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line7" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+        </div>
+        <div class="">
+          <svg class="line1b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+          <svg class="line2b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line3b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line4b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+          <svg class="line5b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line6b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M20 0 L0 20 L0 180 L20 200 L40 180 L40 20 Z"></path>
+          </svg>
+          <svg class="line7b" width="130" height="240" viewBox="0 0 260 480" stroke="white" stroke-width="3" fill="white">
+            <path d="M0 20 L20 40 L180 40 L200 20 L180 0 L20 0 Z"></path>
+          </svg>
+        </div>
+        <h2 id="previus">Previus</h2>
+        <h2 id="next">Next</h2>
+        <input id="respuesta" class="respuesta" type="number" min="0" max="9" name="" value="" placeholder="Ingrese su respuesta">
+        <button id="boton_restart" class="btn btn-secondary button1"type="button" name="button">Restart</button>
+        <button id="boton_comenzar" class="btn btn-secondary button2"type="button" name="button">Comenzar</button>
+        <label id="score" for="">SCORE 0</label>
+        <label id="mensajeError" hidden></label>
+      </div>
+      <div id="tutorial" hidden class="d-flex justify-content-center game">
+        <img id="foto_1"src="numeros_digitales1.jpg" alt="">
+        <p hidden id="descripcion1">Los números digitales se forman a partir de 7 segmentaciones, este juego funciona superponiendo números compuestos por dichos segmentos</p>
+        <p hidden id="descripcion2">Al haber una superposición por ejemplo entre un 8 y un 3, los segmentos del número 3 eliminarán a los segmentos que comparte con el 8</p>
+        <p hidden id="descripcion3">Al no haber superposición de un segmento por ejemplo entre un 1 y un 7. Al resultado final se le agregara dicho segmento.
+        El reto esta en averiguar que número se agregó</p>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+
+    <div hidden class="">
+      <audio controls id="rigth">
+        <source src="audio/goodjob.mp3" type="audio/mpeg">
+      </audio>
+      <audio controls id="wrong">
+        <source src="audio/wrong.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+  </body>
+</html>

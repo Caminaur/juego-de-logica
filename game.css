@@ -1,0 +1,186 @@
+*{
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.game{
+  color:white;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+body {
+    background-color: #ddd;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+.game_hidden{
+  color:white;
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: none !important;
+}
+.main{
+  text-align: -webkit-center;
+}
+.line1{
+  color:white;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+}
+.line2{
+  color:white;
+  position: absolute;
+  top: 128px;
+  left: 84px;
+}
+.line3{
+  color:white;
+  position: absolute;
+  top: 128px;
+  left: 195px;
+}
+.line4{
+  color:white;
+  position: absolute;
+  top: 224px;
+  left: 100px;
+}
+.line5{
+  color:white;
+  position: absolute;
+  top: 240px;
+  left: 85px;
+}
+.line6{
+  color:white;
+  position: absolute;
+  top: 241px;
+  left: 195px;
+}
+.line7{
+  color:white;
+  position: absolute;
+  top: 336px;
+  left: 100px;
+}
+.line1b{
+  color:white;
+  position: absolute;
+  top: 110px;
+  left: 329px;
+}
+.line2b{
+  color:white;
+  position: absolute;
+  top: 128px;
+  left: 314px;
+}
+.line3b{
+  color:white;
+  position: absolute;
+  top: 128px;
+  left: 425px;
+}
+.line4b{
+  color:white;
+  position: absolute;
+  top: 224px;
+  left: 329px;
+}
+.line5b{
+  color:white;
+  position: absolute;
+  top: 240px;
+  left: 314px;
+}
+.line6b{
+  color:white;
+  position: absolute;
+  top: 241px;
+  left: 425px;
+}
+.line7b{
+  color:white;
+  position: absolute;
+  top: 336px;
+  left: 329px;
+}
+.respuesta{
+  position: absolute;
+  top: 411px;
+  left: 86px;
+}
+.button1{
+  position: absolute;
+  top: 408px;
+  left: 290px;
+}
+.button2{
+  position: absolute;
+  top: 408px;
+  left: 370px;
+}
+#score{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+#previus{
+  position: absolute;
+  top: 62px;
+  left: 97px;
+  color: blue;
+}
+#next{
+  position: absolute;
+  top: 62px;
+  right: 86px;
+  color: red;
+}
+#respuesta{
+  position:absolute;
+  width: 176px;
+}
+#mensajeError{
+  font-size: 18px;
+  position: absolute;
+  bottom: 14px;
+  left: 85px;
+  color: red;
+}
+#tutorial p{
+  color:white;
+  font-size: 18px;
+  position: absolute;
+  bottom: 86px;
+  max-width: 70%;
+}
+#foto_1{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 40px;
+}
+#tutorial{
+  position: relative;
+  color:white;
+}
+.fa-arrow-right{
+  color: white;
+  position: absolute;
+  bottom: 144px;
+  right: 45px;
+}
+.fa-arrow-left{
+  color: white;
+  position: absolute;
+  bottom: 154px;
+  left: 45px;
+}
